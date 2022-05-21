@@ -19,8 +19,6 @@ function getUserInfo() {
         }
         // 调用 renderAvatar 渲染用户的头像
         renderAvatar(res.data)
-
-        
       }
     })
 
@@ -36,7 +34,7 @@ function getUserInfo() {
     if (user.user_pic !== null) {
       // 3.1 渲染图片头像
       $('.layui-nav-img')
-        .attr('src', user.user_pic)
+        .attr('src',user.user_pic)
         .show()
       $('.text-avatar').hide()
     } else {
